@@ -2,8 +2,8 @@ numpy
 pandas
 yfinance
 scikit-learn
-tensorflow==2.13.0
+tensorflow
 matplotlib
 plotly
-streamlit==1.30.0
+streamlit
 joblib
