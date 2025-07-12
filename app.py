@@ -128,6 +128,9 @@ if data is None or data.empty:
     st.error("Tidak dapat mengunduh data saham. Periksa koneksi internet Anda.")
     st.stop()
 
+# Ubah MultiIndex jadi single Index agar Plotly bisa baca
+data.columns = data.columns.get_level_values(0)
+
 # Menampilkan data historis
 st.subheader("Data Historis Harga Saham Microsoft")
 col1, col2 = st.columns([3, 1])
